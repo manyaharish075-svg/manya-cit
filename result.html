@@ -1,0 +1,25 @@
+<html>
+
+<input id="marks"
+       type="number"
+       placeholder="Enter marks">
+
+<button onclick="checkResult()">
+    Check Result
+</button>
+
+<p id="result"></p>
+
+<script>
+function checkResult() {
+    let marks = document.getElementById("marks").value;
+
+    if (marks >= 40) {
+        document.getElementById("result").innerHTML = "PASS";
+    } else {
+        document.getElementById("result").innerHTML = "FAIL";
+    }
+}
+</script>
+
+</html>
